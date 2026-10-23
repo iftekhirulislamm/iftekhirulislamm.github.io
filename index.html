@@ -3,30 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Iftekhirul Islam Muhid · Robotics, Control and Machine Learning</title>
-<meta name="description" content="EEE student working on robotics, control, and machine learning for materials and energy. Applying for a Master’s in mechatronics and robotics.">
-<link rel="canonical" href="https://iftekhirulislamm.github.io/">
-<meta name="robots" content="index, follow">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Iftekhirul Islam Muhid · Robotics, Control and Machine Learning">
-<meta property="og:description" content="EEE student working on robotics, control, and machine learning. Applying for a Master’s in mechatronics and robotics.">
-<meta property="og:url" content="https://iftekhirulislamm.github.io/">
-<meta property="og:image" content="https://iftekhirulislamm.github.io/images/profile.jpg">
-<meta name="twitter:card" content="summary">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Iftekhirul Islam Muhid",
-  "alternateName": "I. I. Muhid",
-  "url": "https://iftekhirulislamm.github.io/",
-  "image": "https://iftekhirulislamm.github.io/images/profile.jpg",
-  "jobTitle": "Electrical and Electronic Engineering student",
-  "alumniOf": {"@type": "CollegeOrUniversity", "name": "Gopalganj Science and Technology University"},
-  "knowsAbout": ["Robotics", "Control systems", "Machine learning", "Density functional theory"],
-  "sameAs": ["https://github.com/iftekhirulislamm", "https://linkedin.com/in/iftekhirulislamm"]
-}
-</script>
+<title>Iftekhirul Islam Muhid · Robotics and Autonomous Systems</title>
+<meta name="description" content="Electrical and electronic engineer working on robotics, autonomous systems, and machine learning. Applying for a Master’s in robotics and mechatronics.">
 <style>
 :root{--bg:#f8fafc;--surface:#fff;--ink:#1b2535;--muted:#55627a;--line:#e2e8f0;--a:#0b93e0;--abtn:#0b84cb;--b:#b4590d}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e141c;--surface:#161e29;--ink:#e8eef6;--muted:#a0aec0;--line:#263243;--a:#4cb8f5;--abtn:#1a8fd6;--b:#f0a45d}}
@@ -80,9 +58,17 @@ dd{margin:2px 0 0;color:var(--muted)}
 .row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.93rem}
 @media (max-width:820px){.hero .wrap{grid-template-columns:1fr}.photo{order:-1;width:min(100%,300px);justify-self:start}.bar .wrap{flex-wrap:wrap;padding-top:10px;padding-bottom:10px}.bar nav{order:3;width:100%}.hero{padding:40px 0}}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
+.pair .ph{margin-top:0;min-height:170px}
+.toast{position:fixed;top:84px;left:50%;transform:translateX(-50%);z-index:20;display:flex;align-items:center;gap:14px;max-width:calc(100% - 32px);padding:14px 18px;border-radius:12px;background:var(--ink);color:var(--bg);box-shadow:0 12px 32px rgba(10,20,40,.28);transition:opacity .4s,visibility .4s}
+.toast.hide{opacity:0;visibility:hidden}
+.toast button{background:none;border:0;color:inherit;font-size:1.3rem;line-height:1;cursor:pointer;padding:2px 6px}
+@media (prefers-reduced-motion:reduce){.toast{transition:none}}
+@media (max-width:560px){.pair{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<div class="toast" id="toast" role="status" aria-live="polite"><span>This portfolio is still being built. New projects and figures are on their way.</span><button type="button" id="toast-close" aria-label="Dismiss message">×</button></div>
 <header class="bar"><div class="wrap">
 <a class="brand" href="#top">Portfolio</a>
 <nav aria-label="Main"><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a></nav>
@@ -94,8 +80,8 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <div>
 <p class="hi">Hello, I’m</p>
 <h1>Iftekhirul Islam Muhid</h1>
-<p class="role">Electrical and Electronic Engineering student · Robotics, Control &amp; Machine Learning</p>
-<p class="lead">I build sensor-driven robots with PID control, and I study solar-cell materials with DFT and explainable machine learning. I’m applying for a Master’s in mechatronics and robotics.</p>
+<p class="role">Electrical and Electronic Engineer · Robotics &amp; Autonomous Systems · Machine Learning</p>
+<p class="lead">I build sensor-driven robots with PID control and apply machine learning and deep learning to autonomous systems. My undergraduate thesis was a computational study of MgSiP₂ solar cells. I’m applying for a Master’s in robotics and mechatronics.</p>
 <div class="icons">
 <a href="mailto:iftekhirulislamm@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v.5l-10 6.6L2 6.5V6a1 1 0 0 1 1-1Zm19 3.9V18a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8.9l10 6.6 10-6.6Z"/></svg></a>
 <a href="https://linkedin.com/in/iftekhirulislamm" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.700V21h-4V9.5Z"/></svg></a>
@@ -109,26 +95,29 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <section id="about"><div class="wrap">
 <h2>About</h2>
 <div class="cols">
-<div class="card r"><h3>Robotics and control</h3><p>Sensor-driven robots, PID control, and industrial automation. I trained in PLC, DCS, and SCADA at TICI, and I mentor teams at robotics competitions.</p></div>
-<div class="card s"><h3>Research and machine learning</h3><p>Computational studies of materials and data-driven modeling. My thesis combines DFT, device simulation, and SHAP analysis for MgSiP₂ solar cells.</p></div>
+<div class="card r"><h3>Robotics and autonomous systems</h3><p>Sensor-driven robots, PID control, and industrial automation, with a growing focus on UAVs and aerial robotics. I trained in PLC, DCS, and SCADA at TICI, and I mentor teams at robotics competitions.</p></div>
+<div class="card s"><h3>Machine learning and research</h3><p>Machine learning and deep learning for autonomous systems. My thesis used DFT, device simulation, and a physics-decomposed ML model, and I co-authored a paper accepted at IEEE SPICSCON 2026.</p></div>
 </div>
 </div></section>
 
 <section id="research"><div class="wrap">
 <h2>Research</h2>
-<div class="card s">
-<h3>Undergraduate thesis</h3>
-<p><em>A Comprehensive Study of Electrical, Optical, and Optoelectronic Properties of MgSiP₂-Based Solar Cell Using Quantum ESPRESSO, SCAPS-1D Simulation and Machine Learning</em></p>
+<p style="max-width:62ch"><strong>Research interests:</strong> robotics and autonomous systems, UAVs and aerial robotics, and machine learning and deep learning for autonomous systems.</p>
+<div class="card s" style="margin-top:20px">
+<h3>Computational Investigation of MgSiP₂-Based Solar Cells Using DFT, Device Simulation, and Machine Learning</h3>
+<div class="meta">Undergraduate thesis</div>
 <ul>
-<li>Performed density functional theory (DFT) calculations with Quantum ESPRESSO to determine the electronic and optical properties of Mg-doped SiP₂.</li>
-<li>Designed a solar cell with MgSiP₂ as the absorber layer in SCAPS-1D and optimized the device parameters.</li>
-<li>Built machine learning models to predict cell performance and used SHAP analysis to find the features that most strongly influence efficiency.</li>
+<li>Performed DFT calculations with Quantum ESPRESSO: band gap of 1.37 eV and an absorption coefficient of about 10⁶ cm⁻¹.</li>
+<li>Optimized the device in SCAPS-1D with one-factor-at-a-time (OFAT) sweeps, reaching a simulated efficiency of 27.48%.</li>
+<li>Built a two-stage, physics-decomposed machine learning model on 4,790 samples (R² = 0.9908, RMSE = 0.522), with SHAP analysis of key parameters.</li>
 </ul>
-<ul class="tags"><li>DFT</li><li>Quantum ESPRESSO</li><li>SCAPS-1D</li><li>SHAP</li></ul>
-<!-- TODO: replace with a band structure or J-V curve image, e.g. <img src="images/thesis-figure.png" alt="..."> -->
-<div class="ph">Add a band structure or J–V curve figure here</div>
+<ul class="tags"><li>DFT</li><li>Quantum ESPRESSO</li><li>SCAPS-1D</li><li>Machine learning</li><li>SHAP</li></ul>
+<!-- TODO: replace each box with an image, e.g. <img src="images/thesis-1.png" alt="Band structure of MgSiP2"> and <img src="images/thesis-2.png" alt="J-V curve of the optimized solar cell"> -->
+<div class="pair">
+<div class="ph">Figure 1: add a band structure or DFT result here</div>
+<div class="ph">Figure 2: add a J–V curve or ML result here</div>
 </div>
-<p style="margin-top:18px;color:var(--muted)"><strong style="color:var(--ink)">Research interests:</strong> machine learning and deep learning, robotics and UAVs, embedded systems.</p>
+</div>
 </div></section>
 
 <section id="publications"><div class="wrap">
@@ -159,27 +148,44 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <div class="ph">Add a photo or demo video of the robot here</div>
 <p style="margin:14px 0 0"><a href="#">Add GitHub link for code and wiring</a></p>
 </div>
+<div class="card r">
+<h3>The Health Nourish App</h3>
+<div class="meta">Mobile app · Python, Flutter, Dart</div>
+<p>Co-developed a mobile app with an LLM-powered chatbot for personalized diet routines and health tips.</p>
+<ul class="tags"><li>Python</li><li>Flutter</li><li>Dart</li><li>LLM chatbot</li></ul>
+<!-- TODO: add app screenshots, e.g. <img src="images/health-nourish.png" alt="..."> -->
+<div class="ph">Add app screenshots here</div>
+</div>
 <div class="card" style="border-style:dashed"><h3>Next robotics project</h3><p style="color:var(--muted);margin:0">Add a ROS 2, Gazebo, or hardware project here. Copy the card above and change the title, bullets, tags, and links.</p></div>
 </div>
 </div></section>
 
 <section id="education"><div class="wrap">
 <h2>Education</h2>
+<div class="stack">
 <div class="card">
 <div class="row"><h3>Gopalganj Science and Technology University</h3><span class="meta">March 2022 – October 2026</span></div>
 <div class="row"><p style="margin:0">Bachelor of Science in Electrical and Electronic Engineering</p><span class="meta">CGPA 3.25 out of 4.0</span></div>
+</div>
+<div class="card">
+<div class="row"><h3>Chattogram Cantonment Public College</h3><span class="meta">2020</span></div>
+<div class="row"><p style="margin:0">Higher Secondary Certificate (HSC), Science</p><span class="meta">GPA 5.00 out of 5.00</span></div>
+</div>
+<div class="card">
+<div class="row"><h3>Railway Public High School</h3><span class="meta">2018</span></div>
+<div class="row"><p style="margin:0">Secondary School Certificate (SSC)</p><span class="meta">GPA 5.00 out of 5.00</span></div>
+</div>
 </div>
 </div></section>
 
 <section id="skills"><div class="wrap">
 <h2>Skills</h2>
 <div class="cols">
-<dl style="margin:0"><dt style="margin-top:0">Programming</dt><dd>C, C++, Python, MATLAB, 8086 Assembly; OOP, data structures and algorithms</dd>
-<dt>Automation and industrial tools</dt><dd>TIA Portal, DCS, MATLAB Simulink</dd>
-<dt>Embedded and hardware</dt><dd>Arduino programming</dd></dl>
-<dl style="margin:0"><dt style="margin-top:0">Machine learning and data</dt><dd>NumPy, Pandas, Matplotlib, Seaborn, Plotly, Scikit-learn, SciPy, TensorFlow, PyTorch</dd>
-<dt>Computational physics and simulation</dt><dd>Quantum ESPRESSO (DFT), SCAPS-1D</dd>
-<dt>Design and tools</dt><dd>Proteus, AutoCAD, Logisim, Git, GitHub, Linux and Windows shell scripting, Overleaf LaTeX</dd></dl>
+<dl style="margin:0"><dt style="margin-top:0">Programming</dt><dd>Python, C, C++, MATLAB, Dart, Arduino, 8086 Assembly</dd>
+<dt>Machine learning and data science</dt><dd>TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas, SciPy, Matplotlib, Seaborn, Plotly</dd>
+<dt>Developer tools</dt><dd>Git, GitHub, Linux, shell scripting, LaTeX</dd></dl>
+<dl style="margin:0"><dt style="margin-top:0">Design and automation tools</dt><dd>MATLAB Simulink, TIA Portal, Proteus, AutoCAD, Logisim</dd>
+<dt>Scientific computing and simulation</dt><dd>Quantum ESPRESSO (DFT), SCAPS-1D</dd></dl>
 </div>
 </div></section>
 
@@ -195,7 +201,8 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 <div class="card">
 <h3>Awards and leadership</h3>
 <ul>
-<li>Ranked 17th at IEEEXtreme 17.0 in the Bangladesh region.</li>
+<li>Pre-Seed Funding Award of BDT 25,000 with Team EduVeno, University Innovation Hub Programme (UIHP) Cohort 5, GSTU, 2025. I led the team in securing the funding.</li>
+<li>Ranked 17th at IEEEXtreme 17.0 in the Bangladesh region, 2023.</li>
 <li>President, Programming and Soft Skills Club (2025–2026).</li>
 <li>Webmaster, IEEE GSTU Student Branch (2024–2025).</li>
 <li>Organized and mentored participants of RoboFest’24.</li>
@@ -209,7 +216,7 @@ footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-s
 
 <section id="contact"><div class="wrap">
 <h2>Contact</h2>
-<p style="max-width:56ch">I’m open to Master’s supervisors, labs, and programs in mechatronics and robotics. Email is the best way to reach me.</p>
+<p style="max-width:56ch">I’m open to Master’s supervisors, labs, and programs in robotics, mechatronics, and UAV systems. Email is the best way to reach me.</p>
 <p><a class="btn" href="mailto:iftekhirulislamm@gmail.com">iftekhirulislamm@gmail.com</a></p>
 </div></section>
 </main>
@@ -224,6 +231,12 @@ function sync(){b.textContent=dark()?'☀':'☾'}
 try{var s=localStorage.getItem('theme');if(s)r.setAttribute('data-theme',s)}catch(e){}
 sync();
 b.addEventListener('click',function(){var n=dark()?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}sync()});
+})();
+(function(){
+var t=document.getElementById('toast'),c=document.getElementById('toast-close');
+function hide(){t.classList.add('hide');t.setAttribute('aria-hidden','true')}
+c.addEventListener('click',hide);
+setTimeout(hide,3000);
 })();
 </script>
 </body>
